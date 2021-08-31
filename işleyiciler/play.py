@@ -471,7 +471,7 @@ async def play(_, message: Message):
         # lmoa = await client.get_chat_member(chid,wew)
     except:
         await lel.edit(
-            f"<i>{user.first_name} bu grupta yasaklandı, yöneticiden @TaliaMusicasistant Elle ekleyin.</i>"
+            f"<i>{user.first_name} bu grupta yasaklandı, yöneticiden @Ellycarlmusicplayer Elle ekleyin.</i>"
         )
         return
     text_links=None
