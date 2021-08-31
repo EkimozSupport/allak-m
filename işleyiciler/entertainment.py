@@ -7,7 +7,7 @@ from pyrogram import Client
 from config import BOT_USERNAME
 from helpers.filters import command
 
-@Client.on_message(command(["asupan", f"asupan@Efsanestar_bot"]))
+@Client.on_message(command(["asupan", f"asupan@ellycarlmusicbot"]))
 async def asupan(client, message):
     try:
         resp = requests.get("https://tede-api.herokuapp.com/api/asupan/ptl").json()
