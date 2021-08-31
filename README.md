@@ -70,7 +70,7 @@
 ## Heroku Dağıtımı 💜
 Bu bota ev sahipliği yapmanın kolay yolu, Heroku'ya dağıtın
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Mehmet5506/TaliaMusic99)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/EkimozSupport/allak-m)
 
 ## Demiryolu Dağıtımı 🚄
 Demiryolunda konuşlandırma için [Necessary Variables Here](https://github.com/aryazakaria01/CBMusicBot/blob/main/example.env), hepsini doldurduğundan emin ol.
