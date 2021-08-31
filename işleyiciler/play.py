@@ -172,7 +172,7 @@ def r_ply(type_):
     return mar
 
 
-@Client.on_message(command(["player", f"player@Efsanestar_bot"]) & filters.group & ~filters.edited)
+@Client.on_message(command(["player", f"player@ellycarlmusicbot"]) & filters.group & ~filters.edited)
 @authorized_users_only
 async def settings(client, message):
     playing = None
@@ -453,7 +453,7 @@ async def play(_, message: Message):
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message.chat.id, "🤖: Sesli sohbette müzik çalmak için bu gruba katıldım"
+                        message.chat.id, "🤖: Sesli sohbette müzik çalmak için bu gruba katıldım Carl Benim minik kuşum"
                     )
                     await lel.edit(
                         "<b>Yardımcı userbot sohbetinize katıldı</b>",
@@ -464,7 +464,7 @@ async def play(_, message: Message):
                     # print(e)
                     await lel.edit(
                         f"<b>⛑ Flood Wait Error ⛑\n{user.first_name} userbot için katılma isteği nedeniyle grubunuza katılamıyor! Kullanıcıların gruplar halinde yasaklanmamasını sağlama."
-                        f"\n\nVeya ekleyin @mymusicasistan el ile Grubunuza bakın ve yeniden deneyin</b>",
+                        f"\n\nVeya ekleyin @EllycarlMusicplayer el ile Grubunuza bakın ve yeniden deneyin</b>",
                     )
     try:
         await USER.get_chat(chid)
@@ -511,7 +511,7 @@ async def play(_, message: Message):
                     InlineKeyboardButton("📖 𝙼𝙴𝙽ü", callback_data="menu"),
                     InlineKeyboardButton("🗑 𝙺𝙰𝙿𝙰𝚃", callback_data="cls"),
                 ],[
-                    InlineKeyboardButton("📣 𝙺𝙰𝙽𝙰𝙻", url=f"https://t.me/kurtadamoyunuu")
+                    InlineKeyboardButton("📣 𝙺𝙰𝙽𝙰𝙻", url=f"https://t.me/ucretlibotlar")
                 ],
             ]
         )
@@ -558,7 +558,7 @@ async def play(_, message: Message):
                     InlineKeyboardButton("📖 𝙼𝙴𝙽ü", callback_data="menu"),
                     InlineKeyboardButton("🗑 𝙺𝙰𝙿𝙰𝚃", callback_data="cls"),
                 ],[
-                    InlineKeyboardButton("📣 𝙺𝙰𝙽𝙰𝙻", url=f"https://t.me/(kurtadamoyunuu")
+                    InlineKeyboardButton("📣 𝙺𝙰𝙽𝙰𝙻", url=f"https://t.me/ucretlibotlar")
                 ],
             ]
         )
@@ -585,7 +585,7 @@ async def play(_, message: Message):
             while j < 6:
                 toxxt += f"{emojilist[j]} [{results[j]['title'][:20]}](https://youtube.com{results[j]['url_suffix']})\n"
                 toxxt += f" ├ 💡 **Duration** - {results[j]['duration']}\n"
-                toxxt += f" └ ⚡ Talia Müzik Tarafından.I\n\n"
+                toxxt += f" └ ⚡ Elly&Carl Müzik Tarafından.I\n\n"
                 j += 1            
             keyboard = InlineKeyboardMarkup(
                 [
@@ -630,7 +630,7 @@ async def play(_, message: Message):
                 views = results[0]["views"]
             except Exception as e:
                 await lel.edit(
-                "**❌ Song not found.** lütfen geçerli bir şarkı adı verin."
+                "**❌ Song not found.** lütfen geçerli bir şarkı adı verin Üzgünüm Elly bu şarkıyı bulamadım."
             )
                 print(str(e))
                 return
@@ -642,7 +642,7 @@ async def play(_, message: Message):
                     InlineKeyboardButton("📖 𝙼𝙴𝙽ü", callback_data="menu"),
                     InlineKeyboardButton("🗑 𝙺𝙰𝙿𝙰𝚃", callback_data="cls"),
                 ],[
-                    InlineKeyboardButton("📣 𝙺𝙰𝙽𝙰𝙻", url=f"https://t.me/sohbetdestek")
+                    InlineKeyboardButton("📣 𝙺𝙰𝙽𝙰𝙻", url=f"https://t.me/ucretlibotlar")
                 ],
             ]
             )
@@ -703,7 +703,7 @@ async def lol_cb(b, cb):
     if cb.from_user.id != useer_id:
         await cb.answer("You are not people who requested this song!", show_alert=True)
         return
-    #await cb.message.edit("🔁 **Hazırlanıyor...**")
+    #await cb.message.edit("🔁 **Hazırlanıyorum Elly...**")
     x=int(x)
     try:
         useer_name = cb.message.reply_to_message.from_user.first_name
@@ -741,7 +741,7 @@ async def lol_cb(b, cb):
                     InlineKeyboardButton("📖 𝙼𝙴𝙽ü", callback_data="menu"),
                     InlineKeyboardButton("🗑 𝙺𝙰𝙿𝙰𝚃", callback_data="cls"),
                 ],[
-                    InlineKeyboardButton("📣 𝙺𝙰𝙽𝙰𝙻", url=f"https://t.me/kurtadamoyunuu")
+                    InlineKeyboardButton("📣 𝙺𝙰𝙽𝙰𝙻", url=f"https://t.me/ucretlibotlar")
                 ],
             ]
     )
